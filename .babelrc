@@ -1,0 +1,18 @@
+//babel automatically looks for this file...json code
+
+{
+    //has to be dobule quote
+ "presets":[
+    //specify all babel presets we want to apply to our code
+    ["@babel/preset-env",{
+
+        "targets": { //can see the syntax on babel website
+            "browsers": [">1%","last 2 versions"]
+        }
+    }],
+    "@babel/preset-react"
+ ],
+ "plugins": [ //extra behavior
+    "@babel/plugin-proposal-class-properties"
+ ]
+}

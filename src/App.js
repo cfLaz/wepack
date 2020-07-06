@@ -7,7 +7,7 @@ import asyncComp from './hoc/asyncComp';
 
 const AsyncPizza = asyncComp(()=> {
     return import('./containers/Pizza')
-})
+}) //lazy loading is automatically enabled by webpack, without any changes made by us
 
 class App extends Component {
     render() {
@@ -23,3 +23,6 @@ class App extends Component {
         );
     }
 }
+
+    
+export default App;
